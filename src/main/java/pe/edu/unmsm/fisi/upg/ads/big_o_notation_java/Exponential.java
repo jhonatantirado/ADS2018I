@@ -42,14 +42,16 @@ public class Exponential {
             return 1;
         }
         
-		int[] res = new int[n+1];
+		long[] res = new long[n+1];
+		
 		res[0] = 0;
 		res[1] = 1;
+		
 		for (int k = 2; k <= n; k++)
 		{
-			res[n] = res[n-2] + res[n-1];
+			res[k] = res[k-2] + res[k-1];
 		}
-		return res[(int) n];
+		return res[n];
 		
     }
 	
