@@ -8,7 +8,7 @@ import com.google.common.base.Stopwatch;
 public class Exponential {
 
 	public static void main(String[] args) {
-		long N = 80;
+		long N = 100000;
 		Exponential exponential = new Exponential();
 		Stopwatch stopwatch = Stopwatch.createStarted();
 		for (int i = 1; i <= N; i++) {
